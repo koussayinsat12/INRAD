@@ -30,7 +30,7 @@ def adjust_predicts(score, label, threshold=None, pred=None, calc_latency=False)
         score (np.ndarray): The anomaly score
         label (np.ndarray): The ground-truth label
         threshold (float): The threshold of anomaly score.
-            A point is labeled as "anomaly" if its score is lower than the threshold.
+            A point is labeled as "anomaly" if its score is higher than the threshold.
         pred (np.ndarray or None): if not None, adjust `pred` and ignore `score` and `threshold`,
         calc_latency (bool):
 
